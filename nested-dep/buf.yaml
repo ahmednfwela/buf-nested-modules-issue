@@ -1,0 +1,10 @@
+version: v2
+lint:
+  use:
+    - DEFAULT
+modules:
+  - path: m1
+  - path: m2
+breaking:
+  use:
+    - FILE

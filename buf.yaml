@@ -1,0 +1,14 @@
+version: v2
+lint:
+  use:
+    - DEFAULT
+modules:
+  - path: m3
+  # doesn't work
+  - path: nested-dep
+  # works:
+  # - path: nested-dep/m1
+  # - path: nested-dep/m2
+breaking:
+  use:
+    - FILE
